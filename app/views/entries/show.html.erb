@@ -1,0 +1,7 @@
+  <h1><%= @entry["title"] %>, <%= @entry["description"] %></h1>
+
+  <ul>
+    <li>Place: <a href="/places/<%= @place["id"] %>"><%= @place["name"] %></a></li>
+  </ul>
+
+  <p><a href="/places/<%= @place["id"] %>">Back to <%= @place["name"] %> Posts</a></p>
