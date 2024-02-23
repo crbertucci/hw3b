@@ -1,0 +1,13 @@
+<!-- Place details page -->
+
+<h1><%= @place["name"] %></h1>
+
+<p>
+  <a href="/entries/new?place_id=<%= @place["id"] %>">New Post</a>
+</p>
+
+<p><a href="/places">Back to All Places</a></p>
+
+<form action="/places/<%= @place["id"] %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+</form>
